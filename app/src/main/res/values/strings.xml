@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CCP-MOVIL</string>
+    <string name="img_descripcion">CCP</string>
+    <string name="product_list">Listado de productos</string>
+    <string name="btnSave">Grabar</string>
+    <string name="btnReturn">Retornar</string>
+    <string name="product">Búsqueda de productos</string>
+    <string name="client">Administración de clientes</string>
+    <string name="routes">Administración de rutas</string>
+    <string name="logout">Salir</string>
+</resources>
