@@ -29,7 +29,7 @@ class ProductoAdapter (private val productList: List<Producto>) : RecyclerView.A
         holder.produtName.text = producto.nombre
         holder.productDescription.text = producto.descripcion
         holder.productPrice.text = producto.precioUnitario.toString()
-        Glide.with(holder.productImage.context).load("https://i.pinimg.com/564x/aa/5f/ed/aa5fed7fac61cc8f41d1e79db917a7cd.jpg"/*producto.url*/).into(holder.productImage)
+        Glide.with(holder.productImage.context).load("https://storage.googleapis.com/imagenes-producto/img/producto.png"/*producto.url*/).into(holder.productImage)
     }
 
     override fun getItemCount() = productList.size

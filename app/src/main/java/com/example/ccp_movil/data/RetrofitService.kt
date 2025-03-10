@@ -27,6 +27,7 @@ object RetrofitServiceFactory{
     fun makeRetrofitService(): RetrofitService{
         return Retrofit.Builder()
             .baseUrl("https://my.api.mockaroo.com/api/")
+            //.baseUrl("https://servicio-productos-596275467600.us-central1.run.app/")
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(RetrofitService::class.java)
     }

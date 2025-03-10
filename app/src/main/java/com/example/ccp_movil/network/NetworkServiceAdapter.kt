@@ -16,7 +16,7 @@ import java.util.UUID
 
 class NetworkServiceAdapter(context: Context) {
     companion object{
-        const val BASE_URL= "https://my.api.mockaroo.com/api/"
+        const val BASE_URL= "https://servicio-productos-596275467600.us-central1.run.app/"
         var instance: NetworkServiceAdapter? = null
         fun getInstance(context: Context) =
             instance ?: synchronized(this) {
@@ -32,7 +32,7 @@ class NetworkServiceAdapter(context: Context) {
     }
 
     fun getProductos(onComplete:(resp:List<Producto>)->Unit, onError: (error: VolleyError)->Unit) {
-        requestQueue.add(getRequest("Productos/Listar?key=13719760",
+        requestQueue.add(getRequest("Productos/Listar",
             { response ->
                 Log.d("tag", response)
                 val resp = JSONArray(response)
